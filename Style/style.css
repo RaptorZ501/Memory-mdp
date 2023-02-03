@@ -1,0 +1,36 @@
+
+.container {
+    display: inline-grid;
+    grid-template-columns: 250px 1510px 250px;
+    grid-template-rows: 292px 57px 500px 180px;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+    overflow: hidden;
+}
+
+.backheader {
+    position: relative;
+    width: 2031px;
+    height: 920px;
+    top: -180px;
+}
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+.nav {
+    background-color: rgb(2, 2, 2);
+}
+
+a,
+li {
+    color: white;
+}
