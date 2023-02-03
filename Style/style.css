@@ -2,35 +2,105 @@
 .container {
     display: inline-grid;
     grid-template-columns: 250px 1510px 250px;
-    grid-template-rows: 292px 57px 500px 180px;
+    grid-template-rows: 230px 35px 30px 500px 180px;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
+    ". . ."
     "main main main"
     "footer footer footer";
 }
 
+/*                 Header                      */
+
 .header {
     grid-area: header;
-    overflow: hidden;
+   overflow: hidden;
 }
 
 .backheader {
     position: relative;
     width: 2031px;
     height: 920px;
-    top: -180px;
+    top: -270px;
+
 }
 .logo{
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 350px;
+    height: 350px;
+    bottom: 960px;
+    left: 1650px;
 }
 
+/*                       Nav             */
+
 .nav {
+    grid-area: nav;
     background-color: rgb(2, 2, 2);
+    
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding-top: 3px;
+    align-items: center;
+    list-style: none;
+    
+}
+
+.end {
+    position: relative;
+    left: 81vw;
+}
+
+.nav li:hover {
+    background-color: rgb(49, 49, 49);
+    border-radius: 5%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.nav li:active {
+    padding: 0 2px 0 2px;
 }
 
 a,
 li {
     color: white;
+    margin-left: 5px;
+    margin-right: 5px; 
+
+}
+
+/*                      main                     */
+
+.main {
+    grid-area: main;
+}
+
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkred;
+    width: 90%;
+    height: 100%;
+    color: white;
+    border-radius: 15px;
+}
+
+table{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 20px;
+    width: 90%;
+}
+
+th {
+    background-color: white;
+    color: black;
+    text-align: center;
+    border: 2px solid black;
+    padding: 5px;
 }
