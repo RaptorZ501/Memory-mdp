@@ -2,11 +2,10 @@
 .container {
     display: inline-grid;
     grid-template-columns: 250px 1510px 250px;
-    grid-template-rows: 230px 35px 30px 500px 180px;
+    grid-template-rows: 230px 35px 700px 180px;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
-    ". . ."
     "main main main"
     "footer footer footer";
 }
@@ -77,24 +76,31 @@ li {
 
 .main {
     grid-area: main;
+    background: url("../Element/Img/strongbox-with-light-beams-coming-out-of-open-door.jpg");
+    background-size: 100% 120%;
+    background-repeat: no-repeat;
+    
 }
 
 .table {
+    margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     background-color: darkred;
     width: 90%;
-    height: 100%;
+    height: 90%;
     color: white;
     border-radius: 15px;
+    opacity: 70%;
 }
 
 table{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    top: 20px;
-    width: 90%;
+    top: 1px;
+    width: 80%;
+    opacity: 100%;
 }
 
 th {
@@ -103,4 +109,53 @@ th {
     text-align: center;
     border: 2px solid black;
     padding: 5px;
+}
+
+td {
+    border: 2px solid black;
+}
+
+td ul{
+    display: flex;
+    flex-direction: column;
+    margin-right: 38px;
+}
+
+td li button{
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    border: 2px solid white;
+}
+.delete {
+    background-color: red;
+    color: white;
+}
+
+.modify {
+    background-color: rgb(208, 208, 2);
+}
+
+.ajouter {
+    margin-top: 15px;
+    margin-right: 185px;
+    width: 180px;
+    float: right;
+    background-color: green;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px 100px 0 0
+}
+
+.ajouter:hover,
+.modify:hover,
+.delete:hover{
+    font-size: 103%;
+}
+
+.ajouter:active,
+.modify:active,
+.delete:active {
+    font-size: 95%;
 }
