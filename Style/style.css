@@ -1,84 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=DynaPuff&display=swap');
 
-.container {
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.contain {
     display: inline-grid;
-    grid-template-columns: 250px 1510px 250px;
-    grid-template-rows: 230px 35px 700px 180px;
+    grid-template-columns: 250px 1548px 250px;
+    grid-template-rows: 210px 35px 600px 140px;
     grid-template-areas: 
     "header header header"
     "nav nav nav"
     "main main main"
     "footer footer footer";
+    font-family: 'Creepster', cursive;
+    font-family: 'DynaPuff', cursive;
+    /*background: url("../Element/Img/strongbox-with-light-beams-coming-out-of-open-door.jpg");
+    background-size: 99% 90%;
+    background-repeat: no-repeat;
+    background-position: 12px 200px;*/
+           
 }
 
 /*                 Header                      */
 
+header {
+    grid-area: header;    
+    background: url("../Element/Img/1.jpg");
+    background-size: 100% 200%;
+    background-position: 0 -200px;
+    background-repeat: no-repeat;
+}
+
 .header {
-    grid-area: header;
-   overflow: hidden;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
-.backheader {
-    position: relative;
-    width: 2031px;
-    height: 920px;
-    top: -270px;
-
-}
 .logo{
-    position: relative;
-    width: 350px;
-    height: 350px;
-    bottom: 960px;
-    left: 1650px;
+    width: 250px;
+    height: 250px;
 }
 
 /*                       Nav             */
 
-.nav {
+.navb {
     grid-area: nav;
     background-color: rgb(2, 2, 2);
-    
 }
 
-ul {
+.start {
     display: flex;
     flex-direction: row;
-    padding-top: 3px;
-    align-items: center;
-    list-style: none;
-    
+    margin: 5px 8px 0 10px;
 }
 
 .end {
-    position: relative;
-    left: 81vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -28px;
+    margin-right: 5px;
 }
 
-.nav li:hover {
+.navb a:hover {
     background-color: rgb(49, 49, 49);
-    border-radius: 5%;
+    border-radius: 5px;
     border: 2px solid white;
     cursor: pointer;
 }
-.nav li:active {
+.navb a:active {
     padding: 0 2px 0 2px;
 }
 
-a,
-li {
+a {
     color: white;
     margin-left: 5px;
     margin-right: 5px; 
-
+    padding: 1px 5px 1px 5px;
+    text-decoration: none;
 }
 
 /*                      main                     */
 
 .main {
     grid-area: main;
-    background: url("../Element/Img/strongbox-with-light-beams-coming-out-of-open-door.jpg");
+    background-color: yellow;
+    /*background: url("../Element/Img/strongbox-with-light-beams-coming-out-of-open-door.jpg");
     background-size: 100% 120%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
     
 }
 
@@ -109,6 +121,7 @@ th {
     text-align: center;
     border: 2px solid black;
     padding: 5px;
+    font-weight: bold;
 }
 
 td {
@@ -139,7 +152,7 @@ td li button{
 
 .ajouter {
     margin-top: 15px;
-    margin-right: 185px;
+    margin-right: 190px;
     width: 180px;
     float: right;
     background-color: green;
@@ -158,4 +171,11 @@ td li button{
 .modify:active,
 .delete:active {
     font-size: 95%;
+}
+
+/*                         footer                               */
+
+footer {
+    grid-area: footer;
+    background-color: black;
 }
