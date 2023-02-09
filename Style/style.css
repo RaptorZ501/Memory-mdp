@@ -210,6 +210,25 @@ li {
     margin-left: 1px;
 }
 
+/*                       Formulaire                             */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+label {
+    margin-bottom: 1px;
+    font-size: 20px;
+}
+
+.form input {
+    margin-top: 10px;
+}
+
+
 /*                         footer                               */
 
 footer {
