@@ -92,26 +92,30 @@ a {
     
 }
 
+
 .table {
-    margin-top: 1%;
+    margin-top: 1.5%;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
     background-color: darkred;
     width: 90%;
     height: 90%;
+    border-radius: 10px;
     color: white;
-    border-radius: 15px;
     opacity: 70%;
 }
 
 table{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    justify-content: flex-end;
     top: 1px;
-    width: 80%;
+    width: 100%;
     opacity: 100%;
 }
+
 
 th {
     background-color: white;
@@ -124,12 +128,13 @@ th {
 
 td {
     border: 2px solid black;
+    padding: 10px 120px 10px 120px;
 }
 
 td ul{
     display: flex;
     flex-direction: column;
-    margin-right: 38px;
+    margin-left: -30px;
 }
 
 td li button{
@@ -139,6 +144,7 @@ td li button{
     margin-top: 15px;
     border: 2px solid white;
 }
+
 li {
     list-style: none;
 }
@@ -151,11 +157,16 @@ li {
     background-color: rgb(208, 208, 2);
 }
 
-.ajouter {
+.btn-a {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ajouter {  
     margin-top: 15px;
-    margin-right: 190px;
-    width: 180px;
-    float: right;
+    margin-bottom: 2px;
+    margin-right: 3px;
+    width: 340px;
     background-color: green;
     color: white;
     border: 2px solid white;
@@ -164,19 +175,39 @@ li {
 
 .ajouter:hover,
 .modify:hover,
-.delete:hover{
-    font-size: 103%;
+.delete:hover,
+.btn-search:hover{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
 }
 
 .ajouter:active,
 .modify:active,
-.delete:active {
-    font-size: 95%;
+.delete:active,
+.btn-search:active {
+    background-color: white;
+    color: black;
 }
 
 .search {
+    margin-top: 5%;
     display: flex;
     justify-content: center;
+}
+.search input {
+    width: 20%;
+    border-radius: 15px 0 0 15px;
+    border: 2px solid black;
+}
+
+.btn-search {
+    background-color: green;
+    color: white;
+    padding: 8px;
+    border-radius: 0 15px 15px 0;
+    border: 2px solid black;
+    margin-left: 1px;
 }
 
 /*                         footer                               */
