@@ -20,6 +20,12 @@ body {
     font-family: 'DynaPuff', cursive;           
 }
 
+.activ {
+    color: #595959;
+    cursor: default;
+}
+
+
 /*                 Header                      */
 
 header {
@@ -35,6 +41,8 @@ header {
     flex-direction: row-reverse;
 }
 
+
+
 .logo{
     width: 250px;
     height: 250px;
@@ -47,39 +55,62 @@ header {
     background-color: rgb(2, 2, 2);
     border-top: 1px solid white;
     border-bottom: 1px solid white;
-    box-shadow: 5px 500px 150px white;
+    width: 100%;
+}
+
+.navb div {
+    display: flex;
+    align-content: center;
 }
 
 .start {
     display: flex;
-    flex-direction: row;
-    margin: 5px 8px 0 10px;
+    justify-content: flex-start;
+    margin-top: 5px;
 }
 
 .end {
     display: flex;
-    flex-direction: row-reverse;
-    margin-top: -28px;
+    justify-content: flex-end;
     margin-right: 5px;
+    width: 100%;
+    margin-top: 5px;
 }
 
-.navb a:hover {
+.center {
+    display: flex;
+    justify-content: center;
+    width: 200%;
+    margin-top: 5px;
+}
+
+.bonjour {
+    color: red;
+    font-weight: bold;
+}
+.lienconn {
+    margin-left: 25px;
+}
+
+.lien:hover {
     background-color: rgb(49, 49, 49);
     border-radius: 5px;
     border: 2px solid white;
     cursor: pointer;
 }
-.navb a:active {
+.lien:active {
     padding: 0 2px 0 2px;
 }
 
 a {
     color: white;
     margin-left: 5px;
-    margin-right: 5px; 
+    margin-right: 25px; 
     padding: 1px 5px 1px 5px;
     text-decoration: none;
 }
+
+
 
 /*                      main                     */
 
@@ -176,7 +207,9 @@ li {
 .ajouter:hover,
 .modify:hover,
 .delete:hover,
-.btn-search:hover{
+.btn-search:hover,
+.valider:hover,
+.supprimer:hover{
     background-color: black;
     color: white;
     border: 2px solid white;
@@ -185,7 +218,9 @@ li {
 .ajouter:active,
 .modify:active,
 .delete:active,
-.btn-search:active {
+.btn-search:active,
+.valider:active,
+.supprimer:active{
     background-color: white;
     color: black;
 }
@@ -220,12 +255,67 @@ li {
 }
 
 label {
-    margin-bottom: 1px;
+    margin-bottom: -12px;
+    margin-top: 5px;
     font-size: 20px;
 }
 
 .form input {
     margin-top: 10px;
+}
+
+.inscription {
+    margin-top: 1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 5%;
+    background-color: darkred;
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+    color: white;
+    opacity: 70%;
+}
+
+.grp-val {
+    display: flex;
+    justify-content: center;
+}
+
+.valider {
+    margin-top: 30px;
+    width: 50%;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/*                          Profil                              */
+
+h3,
+p {
+    text-align: center;
+}
+
+h3 {
+    font-weight: bold;
+    background-color: black;
+}
+
+.grp-sup {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+.supprimer {
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    width: 50%;
+    border-radius: 10px;
 }
 
 
