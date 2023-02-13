@@ -293,6 +293,35 @@ label {
     border: 2px solid white;
 }
 
+/*                           Modal                              */
+
+.modal-content {
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
+    color: white;
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    border: 2px solid white;
+}
+
+.modal-content form input {
+    margin-left:auto;
+    margin-right:auto;    
+    width: 70%;
+    margin-top: 15px;
+}
+ .valider-modal {
+    margin-top: 10px;
+    width: 50%;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+ }
+
+
+
 /*                          Profil                              */
 
 h3,
