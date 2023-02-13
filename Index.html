@@ -28,17 +28,18 @@
             <div class="end">
                 <a href="Views/Inscription.html" class="lien">Inscription</a>
                 <p> / </p>
-                <a class="lien lienconn" id="connex" data-bs-toggle="modal" data-bs-target="#exampleModal">Connexion</a>
+                <a class="lien lienconn" id="connex" data-bs-toggle="modal" data-bs-target="#connexion">Connexion</a>
             </div>
         </div>
     </nav>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <!-- Modal connexion -->
+    <div class="modal fade" id="connexion" tabindex="-1" aria-labelledby="connexion" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
+            <div class="modal-content modal-connex">
                 <form action="index.php" method="POST" class="form">
                 
-                    <label for="name">Nom d'utilisateur ou adresse e-mail</label>
+                    <label for="name">Nom d'utilisateur<br> ou adresse e-mail</label>
                     <input type="text" name="name" id="name">
                 
                     <label for="mdp">Mot de passe</label>
@@ -52,10 +53,34 @@
             </div>
         </div>
     </div>
+
+    <!-- Modal ajout -->
+    <div class="modal fade" id="ajout" tabindex="-1" aria-labelledby="ajout" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-ajout">
+                <form action="index.php" method="POST" class="form">
+    
+                    <label for="site">Site</label>
+                    <input type="text" name="site" id="site">
+    
+                    <label for="mdp">Mot de passe</label>
+                    <input type="text" name="mdp" id="mdp">
+
+                    <label for="pseudo">Pseudo</label>
+                    <input type="text" name="pseudo" id="pseudo">
+    
+                    <div class="grp-val">
+                        <button type="submit" class="valider-modal">Valider</button>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </div>
     <main class="main">
         <div class="table">
             <div class="btn-a">
-                <button class="ajouter">Ajouter</button>
+                <button class="ajouter" data-bs-toggle="modal" data-bs-target="#ajout">Ajouter</button>
             </div>
             <table>
                 <tr>
